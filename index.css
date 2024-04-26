@@ -1,0 +1,147 @@
+/*Layout*/
+
+/*Images*/
+
+.article-main-image
+{
+    width: 100%;
+    display: block;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.user-image
+{
+    width: 40px;
+    display: block;
+    border-radius: 20px;
+}
+
+body
+{
+    background-color: hsl(210, 46%, 95%);
+    font-family: Manrope;
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-container
+{
+    width: min(95%, 40rem);
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+.text-and-author-container
+{
+    padding: 2.5em 2.2em 1.5em 2.2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    border-radius: 10px;
+}
+
+/*Article title and description stylings*/
+
+.article-title
+{
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.article-text
+{
+    color: hsl(214, 17%, 51%);
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+/*User information and share button stylings*/
+
+.author-info-and-button-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.user-name-and-date-container
+{
+    margin-left: 1rem;
+}
+
+.user-name
+{
+    color: hsl(217, 19%, 35%);
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.article-date
+{
+    color: hsl(212, 23%, 69%);
+    margin: 0;
+}
+
+.share-button
+{
+    margin-left: auto;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+
+    background-color: hsl(210, 46%, 95%);
+
+    cursor: pointer;
+}
+
+/*Typography*/
+
+/*Article title and description typography*/
+
+.article-title
+{
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.article-text
+{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+/*User and date typography*/
+
+.user-name
+{
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.article-date
+{
+    font-size: 0.85rem;
+}

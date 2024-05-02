@@ -60,6 +60,8 @@ body
 
     border-radius: 20px;
     margin-right: 1rem;
+
+    cursor: pointer;
 }
 
 .article-content
@@ -123,6 +125,8 @@ body
     border-radius: 50%;
 
     cursor: pointer;
+
+    transition: background-color 0.3s ease-out;
 }
 
 .share-button.active
@@ -157,18 +161,32 @@ body
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
-    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.2s ease-in;
+    pointer-events: none;
 }
 
 .share-options.active
 {
-    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
 }
 
 .share-text
 {
     color: var(--Grayish-Blue);
     letter-spacing: 0.4rem;
+}
+
+.share-svg
+{
+    cursor: pointer;
+}
+
+.share-svg:hover .svg-share-fill
+{
+    fill: black;
 }
 
 /*Desktop design*/

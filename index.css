@@ -127,6 +127,8 @@ body
     cursor: pointer;
 
     transition: background-color 0.3s ease-out;
+
+    font-size: 0;
 }
 
 .share-button.active
